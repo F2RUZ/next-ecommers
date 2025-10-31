@@ -1,14 +1,8 @@
-// entities/ui/Error.tsx
 "use client";
 
 import React from "react";
 import { Box, Typography, Button, Paper } from "@mui/material";
 import ErrorOutlineIcon from "@mui/icons-material/ErrorOutline";
-
-// interface ErrorProps {
-//   message?: string;
-//   onRetry?: () => void;
-// }
 
 const Error = ({ message = "Something went wrong", onRetry }) => {
   return (
@@ -51,7 +45,6 @@ const Error = ({ message = "Something went wrong", onRetry }) => {
             Please try again later
           </Typography>
         )}
-        {/* JSON ko‘rinish */}
         <Box
           component="pre"
           sx={{
