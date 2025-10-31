@@ -1,17 +1,136 @@
 {
   "products": [
     {
-      "id": 1,
+      "id": "1",
       "title": "iPhone 15 Pro",
       "description": "Powerful smartphone with A17 chip.",
-      "image": "https://example.com/iphone15.jpg",
+      "image": "https://m-cdn.phonearena.com/images/phones/84097-350/Apple-iPhone-15-Pro.webp?w=1",
       "liked": false
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "MacBook Air M3",
       "description": "Ultra-thin laptop for professionals.",
-      "image": "https://example.com/macbook.jpg",
+      "image": "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/mba_13_m3_2024_hero.png",
+      "liked": true
+    },
+    {
+      "id": "3",
+      "title": "iPad Pro",
+      "description": "High-performance tablet with M3 chip.",
+      "image": "https://acom.pl/media/wysiwyg/iPad_Pro_11_M4_Cellular_Space_Black_PDP_Image_Position_1b__pl_PL.jpg",
+      "liked": true
+    },
+    {
+      "id": "4",
+      "title": "Apple Watch Series 9",
+      "description": "Smartwatch with health tracking features.",
+      "image": "https://files.refurbed.com/ii/apple-watch-series-9-alu-45mm-1694665623.jpg",
+      "liked": false
+    },
+    {
+      "id": "7",
+      "title": "iMac 24",
+      "description": "All-in-one desktop computer.",
+      "image": "https://www.apple.com/newsroom/images/2023/10/apple-supercharges-24-inch-imac-with-new-m3-chip/article/Apple-iMac-M3-colors-231030_big.jpg.large.jpg",
+      "liked": false
+    },
+    {
+      "id": "8",
+      "title": "HomePod Mini",
+      "description": "Smart speaker with Siri integration.",
+      "image": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/homepod-mini-og-202110?wid=1200&hei=630&fmt=jpeg&qlt=90&.v=1719505542711",
+      "liked": false
+    },
+    {
+      "id": "9",
+      "title": "Apple TV 4K",
+      "description": "Streaming device with 4K HDR support.",
+      "image": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/apple-tv-og-202210?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1664384900290",
+      "liked": false
+    },
+    {
+      "id": "10",
+      "title": "Magic Keyboard",
+      "description": "Wireless keyboard with numeric pad.",
+      "image": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MXCK3?wid=4000&hei=4000&fmt=jpeg&qlt=90&.v=1730320444782",
+      "liked": false
+    },
+    {
+      "id": "11",
+      "title": "Magic Mouse 2",
+      "description": "Wireless mouse with multi-touch surface.",
+      "image": "https://i.ytimg.com/vi/qn6fz_6_fcw/maxresdefault.jpg",
+      "liked": false
+    },
+    {
+      "id": "12",
+      "title": "Mac Mini M3",
+      "description": "Compact desktop with M3 chip.",
+      "image": "https://www.notebookcheck.pl/fileadmin/Notebooks/News/_nc3/Apple-Mac-mini-M2-and-M2-Pro-hero-230117.jpg",
+      "liked": false
+    },
+    {
+      "id": "13",
+      "title": "iPhone 14",
+      "description": "Previous generation iPhone model.",
+      "image": "https://files.refurbed.com/ii/iphone-14-pro-1662623063.jpg",
+      "liked": false
+    },
+    {
+      "id": "14",
+      "title": "iPad Air",
+      "description": "Lightweight tablet with powerful performance.",
+      "image": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-storage-select-202405-13inch-starlight-wificell_FMT_WHH?wid=1280&hei=720&fmt=p-jpg&qlt=80&.v=TENLTVRoeFdHUUI5ZE1ZZmxpQUlNMm5pQUoxb0NIVEJFSjRVRzZ4dzV5VG9xblRoSytlREYxb2tmSnZTRlIvWks4U3ByaTY2QlR5SjgrdzcyeUx3RXowaHZCSnNaQ1dhNGxkUk9mRkJiK2NtUnpENUIyWHRhTlhpRFMzSXBkU2NLN0lLTmxkN0JYZHd3RHhuQ3VpNW9wQVdzcnJ6NUx6azFSWVBFTms4bnZV&traceId=1",
+      "liked": false
+    },
+    {
+      "id": "15",
+      "title": "Apple Watch SE",
+      "description": "Affordable smartwatch with fitness tracking.",
+      "image": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/se-case-unselect-gallery-1-202509_FMT_WHH?wid=752&hei=720&fmt=p-jpg&qlt=80&.v=Rmt2NDRBcDRCNVhOcFJTSzZLRU92WlVTRWk4UllCemZya05RQUd4OC9lSWJYRlBVV01kRkRDSmpvS0REeWlOTGpDd3Z3NTI0cUNBeVNMeUt0VjQyMW11Y0hhYzFCK0tzV3gwSFNTUHQzNHViS2JzQnNFdC92aDBQTU1sTVpCVko",
+      "liked": false
+    },
+    {
+      "id": "16",
+      "title": "AirPods 3",
+      "description": "Wireless earbuds with spatial audio.",
+      "image": "https://www.apple.com/v/airpods-pro/q/images/overview/welcome/hero__b0eal3mn03ua_large.jpg",
+      "liked": false
+    },
+    {
+      "id": "17",
+      "title": "Mac Studio",
+      "description": "High-end desktop for creatives.",
+      "image": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-studio-select-202503?wid=892&hei=820&fmt=jpeg&qlt=90&.v=TFF4TlZ2eUF4VmJBcXdGL1JqakhPRVEwUzFPbFJqRzRRVjVKc0grVGRsSElMQ1AwaTZodXpycCtPYXhhMHkvenIrSFUvMWdNSysyUDNqT0tTaFQrRWZ3Zm9pd0s0WHcyVkEyOHdaWlN6ZWs",
+      "liked": false
+    },
+    {
+      "id": "18",
+      "title": "Pro Display XDR",
+      "description": "Professional 6K display for creatives.",
+      "image": "https://photos5.appleinsider.com/gallery/0-78402-xdr-2-xl.jpg",
+      "liked": false
+    },
+    {
+      "id": "19",
+      "title": "Apple Pencil 2",
+      "description": "Stylus for iPad with precision input.",
+      "image": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/apple-pencil-pro-splitter-202405_FMT_WHH?wid=448&hei=800&fmt=png-alpha&.v=cU9HSUJpZUhzWS81ZmZ1ZWtXeDJEdlRJWGw3S3R6dEpCTGNXeVVhZUFHWWZ4Ym1VaENGQ0RQaFRuYzFqNGgzeXQ5UUowR2tPeDhiOERaa1M4ZXJJbW53ZEd6YWEyeTVsMHRvZnBLdXg3bVdJWktQRGRwZm1IaURrUFhIL2I2WkU",
+      "liked": false
+    },
+    {
+      "id": "20",
+      "title": "Magic Trackpad",
+      "description": "Wireless trackpad with multi-touch gestures.",
+      "image": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MXK93?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=RnNaeW1GdWhuZUxETSs1eTlJM1dEZ2tuVHYzMERCZURia3c5SzJFOTlPaTY2RUlBaWZlQVRESlNWbTZyWXZnU2IvWDRhbGhOQ2VxZzhzMWFwVnkyUWc",
+      "liked": false
+    },
+    {
+      "id": "21",
+      "title": "Magic Trackpad",
+      "description": "Wireless trackpad with multi-touch gestures.",
+      "image": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MXK93?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=RnNaeW1GdWhuZUxETSs1eTlJM1dEZ2tuVHYzMERCZURia3c5SzJFOTlPaTY2RUlBaWZlQVRESlNWbTZyWXZnU2IvWDRhbGhOQ2VxZzhzMWFwVnkyUWc",
       "liked": false
     }
   ]
