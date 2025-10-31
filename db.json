@@ -1,0 +1,18 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "iPhone 15 Pro",
+      "description": "Powerful smartphone with A17 chip.",
+      "image": "https://example.com/iphone15.jpg",
+      "liked": false
+    },
+    {
+      "id": 2,
+      "title": "MacBook Air M3",
+      "description": "Ultra-thin laptop for professionals.",
+      "image": "https://example.com/macbook.jpg",
+      "liked": false
+    }
+  ]
+}
