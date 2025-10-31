@@ -5,7 +5,7 @@
       "title": "iPhone 15 Pro",
       "description": "Powerful smartphone with A17 chip.",
       "image": "https://m-cdn.phonearena.com/images/phones/84097-350/Apple-iPhone-15-Pro.webp?w=1",
-      "liked": false
+      "liked": true
     },
     {
       "id": "2",
@@ -26,7 +26,7 @@
       "title": "Apple Watch Series 9",
       "description": "Smartwatch with health tracking features.",
       "image": "https://files.refurbed.com/ii/apple-watch-series-9-alu-45mm-1694665623.jpg",
-      "liked": false
+      "liked": true
     },
     {
       "id": "7",

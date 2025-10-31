@@ -18,7 +18,7 @@ export default function ProductsPage() {
   const [page, setPage] = useState(1);
   const dispatch = useAppDispatch();
 
-  const { data, isLoading, error } = useGetProductsQuery(null);
+  const { data, isLoading, error } = useGetProductsQuery();
   const [deleteProduct] = useDeleteProductMutation();
 
   const handleToggleLike = (id: number) => {
