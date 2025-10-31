@@ -1,66 +1,127 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+"use client";
 
-export default function Home() {
+import { Box, Typography, Button, Container, Stack } from "@mui/material";
+import Image from "next/image";
+import Link from "next/link";
+
+export default function HomePage() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
+    <Box
+      sx={{
+        minHeight: "100vh",
+        bgcolor: "background.default",
+        color: "text.primary",
+        display: "flex",
+        flexDirection: "column",
+      }}
+    >
+      {/* Hero Section */}
+      <Container
+        maxWidth="md"
+        sx={{
+          flexGrow: 1,
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          textAlign: "center",
+          py: { xs: 6, sm: 12 },
+        }}
+      >
         <Image
-          className={styles.logo}
           src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
+          alt="Next.js Logo"
+          width={120}
+          height={24}
           priority
         />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.tsx file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+
+        <Typography
+          variant="h3"
+          component="h1"
+          sx={{
+            fontWeight: "bold",
+            mt: 4,
+            mb: 2,
+            fontSize: { xs: "2rem", sm: "3rem" },
+          }}
+        >
+          Welcome to Products App
+        </Typography>
+
+        <Typography
+          variant="h6"
+          sx={{
+            color: "text.secondary",
+            maxWidth: 600,
+            mb: 4,
+            fontSize: { xs: "1rem", sm: "1.25rem" },
+          }}
+        >
+          Manage, explore, and create amazing products with ease. This SPA is
+          built using Next.js, TypeScript, MUI, and Redux Toolkit (RTK Query).
+        </Typography>
+
+        {/* Call-to-Action Buttons */}
+        <Stack
+          direction={{ xs: "column", sm: "row" }}
+          spacing={2}
+          sx={{ mt: 2 }}
+        >
+          <Button
+            component={Link}
+            href="/products"
+            variant="contained"
+            color="primary"
+            size="large"
+            sx={{
+              borderRadius: 3,
+              px: 4,
+              textTransform: "none",
+              fontWeight: "bold",
+            }}
           >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            View Products
+          </Button>
+
+          <Button
+            component={Link}
+            href="/create-product"
+            variant="outlined"
+            color="secondary"
+            size="large"
+            sx={{
+              borderRadius: 3,
+              px: 4,
+              textTransform: "none",
+              fontWeight: "bold",
+              borderColor: "secondary.main",
+              color: "secondary.main",
+              "&:hover": {
+                backgroundColor: "rgba(187, 134, 252, 0.1)",
+                borderColor: "secondary.main",
+              },
+            }}
           >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+            Create Product
+          </Button>
+        </Stack>
+      </Container>
+
+      {/* Footer */}
+      <Box
+        component="footer"
+        sx={{
+          py: 3,
+          textAlign: "center",
+          borderTop: 1,
+          borderColor: "divider",
+          bgcolor: "background.paper",
+          color: "text.secondary",
+        }}
+      >
+        © {new Date().getFullYear()} Products App — Built with Next.js & MUI
+      </Box>
+    </Box>
   );
 }
