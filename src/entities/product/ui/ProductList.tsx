@@ -1,34 +1,29 @@
 "use client";
 
 import React from "react";
-import { Grid } from "@mui/material";
+import Grid from "@mui/material/Grid";
 import { Product } from "../model/productSlice";
 import ProductCard from "./ProductCard";
 
 interface ProductListProps {
   products: Product[];
-  onToggleLike: (id: number) => void;
+  onToggleLike: (id: number) => void; 
   onDelete: (id: number) => void;
 }
 
-const ProductList = ({
+const ProductList: React.FC<ProductListProps> = ({
   products,
   onToggleLike,
   onDelete,
-}: ProductListProps) => {
+}) => {
   return (
-    <Grid
-      container
-      spacing={2}
-      justifyContent="center" 
-      alignItems="center" 
-    >
+    <Grid container spacing={2} justifyContent="center" alignItems="center">
       {products.map((product) => (
-        <Grid item xs={12} sm={6} md={3} key={product.id}>
+        <Grid item key={product.id} xs={12} sm={6} md={3}>
           <ProductCard
             product={product}
-            onToggleLike={onToggleLike}
-            onDelete={onDelete}
+            onToggleLike={() => onToggleLike(product.id)} 
+            onDelete={() => onDelete(product.id)} 
           />
         </Grid>
       ))}
