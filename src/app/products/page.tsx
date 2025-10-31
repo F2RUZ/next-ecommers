@@ -18,38 +18,30 @@ export default function ProductsPage() {
   const [page, setPage] = useState(1);
   const dispatch = useAppDispatch();
 
-  const { data, isLoading, error } = useGetProductsQuery();
+  const { data, isLoading, error, refetch } = useGetProductsQuery();
   const [deleteProduct] = useDeleteProductMutation();
 
   const handleToggleLike = (id: number) => {
     dispatch(toggleLike(id));
+    refetch();
   };
 
   const handleDelete = (id: number) => {
     deleteProduct(id);
+    refetch();
   };
 
-  if (isLoading) {
-    return <Loader />;
-  }
+  if (isLoading) return <Loader />;
+  if (error) return <Error onRetry={refetch} />;
 
-  if (error) {
-    return <Error />;
-  }
-
-  // Pagination uchun products slice
+  // Pagination uchun
   const startIndex = (page - 1) * PAGE_SIZE;
   const endIndex = startIndex + PAGE_SIZE;
   const paginatedProducts = data?.slice(startIndex, endIndex) || [];
   const totalPages = Math.ceil((data?.length || 0) / PAGE_SIZE);
 
-  const handlePrevPage = () => {
-    if (page > 1) setPage(page - 1);
-  };
-
-  const handleNextPage = () => {
-    if (page < totalPages) setPage(page + 1);
-  };
+  const handlePrevPage = () => page > 1 && setPage(page - 1);
+  const handleNextPage = () => page < totalPages && setPage(page + 1);
 
   return (
     <Container sx={{ mt: 5 }}>
@@ -65,7 +57,6 @@ export default function ProductsPage() {
             onDelete={handleDelete}
           />
 
-          {/* Pagination controls */}
           <Box
             sx={{
               display: "flex",
